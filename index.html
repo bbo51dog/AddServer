@@ -1,6 +1,6 @@
 <?php
 if(!empty($_GET['name']) and !empty($_GET['ip']) and !empty($_GET['port'])){
-    header("Location: minecraft:?addExternalServer={$_GET['name']}|{$_GET['ip']}:{$_GET['port']}");
+    header("minecraft:?addExternalServer={$_GET['name']}|{$_GET['ip']}:{$_GET['port']}");
 }
 ?>
 <!DOCTYPE html>
