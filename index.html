@@ -12,26 +12,7 @@
 <body>
     <h1>Developing</h1>
     
-    <script type="text/javascript">
-        window.onload = function(){
-            alert('test1');
-            var get = {};
-            if(1 < location.search.length){
-                var query = window.location.search.substring(1);
-                var param = query.split('&');
-                for(var i = 0; i < param.length; i++ ){
-                    var element = parameters[i].split('=');
-                    var name = decodeURIComponent(element[ 0 ]);
-                    var value = decodeURIComponent(element[ 1 ]);
-                    get[name] = value;
-                }
-            }
-            alert('test2');
-            if(get['name'] and get['ip'] and get['port']){
-                alert('test3');
-                location.href = 'minecraft://?addExternalServer=' + get['name'] + '|' + get['ip'] + ':' + get['port'];
-            }
-        }
-    </script>
+    <script type="text/javascript" src="/js/AddServer.js"></script>
+
 </body>
 </html>
