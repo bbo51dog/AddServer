@@ -10,5 +10,6 @@ if(1 < location.search.length){
     }
 }
 if(get['name'] && get['ip'] && get['port']){
+    alert('test');
     location.href = 'minecraft://?addExternalServer=' + get['name'] + '|' + get['ip'] + ':' + get['port'];
 }
