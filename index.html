@@ -14,6 +14,7 @@
     
     <script>
         window.onload = function(){
+            document.write('test1');
             var get = {};
             if(1 < location.search.length){
                 var query = window.location.search.substring(1);
@@ -25,8 +26,9 @@
                     get[name] = value;
                 }
             }
+            document.write('test2');
             if(get['name'] and get['ip'] and get['port']){
-                document.write('test');
+                document.write('test3');
                 location.href = 'minecraft://?addExternalServer=' + get['name'] + '|' + get['ip'] + ':' + get['port'];
             }
         }
