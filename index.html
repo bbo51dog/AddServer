@@ -17,7 +17,7 @@
     </header>
 
     <div class="container">
-        <form name="create_form" method="get">
+        <form name="create_form" method="get" action="javascript:void(0)">
             <div class="form-group">
                 <label for="create_name">サーバー名</label>
                 <input id="create_name" class="form-control" type="text">
@@ -35,7 +35,7 @@
             <input type="submit" class="btn btn-primary rounded-pill" value="リンク作成！" onclick="createLink();">
         </form>
         <hr>
-        <form name="result_form">
+        <form name="result_form" action="javascript:void(0)">
             <div class="form-group">
                 <label for="result">以下のリンクにアクセスするとサーバーが追加されます</label>
                 <textarea id="result" class="form-control" type="text" readonly="readonly"></textarea>
