@@ -8,6 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="js/AddServer.js"></script>
+    <script type="text/javascript" src="js/CopyLink.js"></script>
     <script type="text/javascript" src="js/CreateLink.js"></script>
 </head>
 
@@ -40,6 +41,7 @@
                 <label for="result">以下のリンクにアクセスするとサーバーが追加されます</label>
                 <textarea id="result" class="form-control" type="text" readonly="readonly"></textarea>
             </div>
+            <input type="submit" class="btn btn-primary rounded-pill" value="リンクをコピー" onclick="copyLink();">
         </form>
     </div>
 </body>
