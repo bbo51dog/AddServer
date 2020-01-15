@@ -8,6 +8,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="js/AddServer.js"></script>
+    <script type="text/javascript" src="js/CreateLink.js"></script>
 </head>
 
 <body onload="addServer();">
@@ -15,7 +16,7 @@
 
     </header>
 
-    <form>
+    <form name="create_link">
         <label for="name">サーバー名</label>
         <input id="name" type="text">
 
@@ -25,7 +26,7 @@
         <label for="port">サーバーアドレス(ポート)</label>
         <input id="port" type="text">
 
-        <input type="submit" value="リンク作成！">
+        <input type="submit" value="リンク作成！" onClick="return createLink();">
     </form>
 </body>
 </html>

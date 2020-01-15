@@ -1,0 +1,8 @@
+function createLink(){
+    if(create_link.name.value && create_link.ip.value && create_link.port.value){
+        return true;
+    }else{
+        alert('サーバー名、IP、アドレスの全てを入力してください');
+        return false;
+    }
+}
