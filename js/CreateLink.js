@@ -1,6 +1,6 @@
 function createLink(){
-    if(create_link.name.value && create_link.ip.value && create_link.port.value){
-        var link = 'https://addserver.bbo51dog.net/?name=' + create_link.name.value + '&ip=' + create_link.ip.value + '&port=' + create_link.port.value;
+    if(create_form.create_name.value && create_form.create_ip.value && create_form.create_port.value){
+        var link = 'https://addserver.bbo51dog.net/?name=' + create_form.create_name.value + '&ip=' + create_form.create_ip.value + '&port=' + create_form.create_port.value;
         document.getElementById("result").value = link;
         return true;
     }else{
