@@ -4,7 +4,7 @@ body {
 
 .ct,
 .over:before {
-    background: url(/image/background.jpg) no-repeat fixed 0 0 / cover;
+    background: url(/image/background.png)  fixed 0 0 / cover;
     min-height: 450px;
 }
 
