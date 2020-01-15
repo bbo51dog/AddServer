@@ -16,7 +16,7 @@
 
     </header>
 
-    <form name="create_link">
+    <form name="create_link" method="post">
         <label for="name">サーバー名</label>
         <input id="name" type="text">
 
@@ -27,6 +27,10 @@
         <input id="port" type="text">
 
         <input type="submit" value="リンク作成！" onClick="return createLink();">
+    </form>
+
+    <form name="result_form">
+        <input id="result" type="text" readonly="readonly">
     </form>
 </body>
 </html>
