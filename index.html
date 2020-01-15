@@ -16,21 +16,31 @@
         <h1>Add MCBE server</h1>
     </header>
 
-    <form name="create_form" method="get">
-        <label for="create_name">サーバー名</label>
-        <input id="create_name" type="text">
+    <div class="container">
+        <form name="create_form" method="get">
+            <div class="form-group">
+                <label for="create_name">サーバー名</label>
+                <input id="create_name" class="form-control" type="text">
+            </div>
 
-        <label for="create_ip">サーバーIP</label>
-        <input id="create_ip" type="text">
+            <div class="form-group">
+                <label for="create_ip">サーバーIP</label>
+                <input id="create_ip" class="form-control" type="text">
+            </div>
 
-        <label for="create_port">サーバーアドレス(ポート)</label>
-        <input id="create_port" type="text" value="19132">
-
-        <input type="submit" value="リンク作成！" onclick="createLink();">
-    </form>
-
-    <form name="result_form">
-        <input id="result" type="text" readonly="readonly">
-    </form>
+            <div class="form-group">
+                <label for="create_port">サーバーアドレス(ポート)</label>
+                <input id="create_port" class="form-control" type="text" value="19132">
+            </div>
+            <input type="submit" class="btn btn-primary rounded-pill" value="リンク作成！" onclick="createLink();">
+        </form>
+        <hr>
+        <form name="result_form">
+            <div class="form-group">
+                <label for="result">以下のリンクにアクセスするとサーバーが追加されます</label>
+                <textarea id="result" class="form-control" type="text" readonly="readonly"></textarea>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
