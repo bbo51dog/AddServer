@@ -18,30 +18,36 @@
     </header>
 
     <div class="container">
-        <form name="create_form" action="javascript:void(0)">
-            <div class="form-group">
+        <form class="row" name="create_form" action="javascript:void(0)">
+            <div class="col-12 form-group">
                 <label for="create_name">サーバー名</label>
                 <input id="create_name" class="form-control" type="text">
             </div>
 
-            <div class="form-group">
+            <div class="col-12 form-group">
                 <label for="create_ip">サーバーIP</label>
                 <input id="create_ip" class="form-control" type="text">
             </div>
 
-            <div class="form-group">
+            <div class="col-12 form-group">
                 <label for="create_port">サーバーアドレス(ポート)</label>
                 <input id="create_port" class="form-control" type="text" value="19132">
             </div>
-            <input type="submit" class="btn btn-primary rounded-pill" value="リンク作成！" onclick="createLink();">
+
+            <div class="col-12 form-group">
+                <input type="submit" class="btn btn-primary rounded-pill d-block" value="リンク作成！" onclick="createLink();">
+            </div>
         </form>
         <hr>
-        <form name="result_form" action="javascript:void(0)">
-            <div class="form-group">
+        <form class="row" name="result_form" action="javascript:void(0)">
+            <div class="col-12 form-group">
                 <label for="result">以下のリンクにアクセスするとサーバーが追加されます</label>
                 <textarea id="result" class="form-control" type="text" readonly="readonly"></textarea>
             </div>
-            <input type="submit" class="btn btn-primary rounded-pill" value="リンクをコピー" onclick="copyLink();">
+
+            <div class="col-12 form-group">
+                <input type="submit" class="btn btn-primary rounded-pill" value="リンクをコピー" onclick="copyLink();">
+            </div>
         </form>
     </div>
 </body>
