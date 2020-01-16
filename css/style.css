@@ -55,3 +55,8 @@ footer p {
     display: inline-block;
     color: #464646;
 }
+
+footer a {
+    display: inline-block;
+    margin: 15px;
+}
