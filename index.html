@@ -15,47 +15,49 @@
 </head>
 
 <body onload="addServer();">
-    <header>
-        <div class="ct">
-            <div class="over">
-                <h1>Add MCBE server</h1>
-                <p>- Add mcbe server to server list in app -</p>
+    <div id="wrap">
+        <header>
+            <div class="ct">
+                <div class="over">
+                    <h1>Add MCBE server</h1>
+                    <p>- Add mcbe server to server list in app -</p>
+                </div>
             </div>
+        </header>
+
+        <div class="container">
+            <form class="row" name="create_form" action="javascript:void(0)">
+                <div class="col-12 form-group">
+                    <label for="create_name"><h3>サーバー名</h3></label>
+                    <input id="create_name" class="form-control" type="text">
+                </div>
+
+                <div class="col-12 form-group">
+                    <label for="create_ip"><h3>サーバーIP</h3></label>
+                    <input id="create_ip" class="form-control" type="text">
+                </div>
+
+                <div class="col-12 form-group">
+                    <label for="create_port"><h3>サーバーアドレス(ポート)</h3></label>
+                    <input id="create_port" class="form-control" type="text" value="19132">
+                </div>
+
+                <div class="col-12 form-group">
+                    <input type="submit" class="btn btn-primary rounded-pill d-block" value="リンク作成！" onclick="createLink();">
+                </div>
+            </form>
+            <hr>
+            <form class="row" name="result_form" action="javascript:void(0)">
+                <div class="col-12 form-group">
+                    <label for="result"><h3>以下のリンクにアクセスするとサーバーが追加されます</h3></label>
+                    <textarea id="result" class="form-control" type="text" readonly="readonly"></textarea>
+                </div>
+
+                <div class="col-12 form-group">
+                    <input type="submit" class="btn btn-primary rounded-pill" value="リンクをコピー" onclick="copyLink();">
+                </div>
+            </form>
         </div>
-    </header>
-
-    <div id="wrap" class="container">
-        <form class="row" name="create_form" action="javascript:void(0)">
-            <div class="col-12 form-group">
-                <label for="create_name"><h3>サーバー名</h3></label>
-                <input id="create_name" class="form-control" type="text">
-            </div>
-
-            <div class="col-12 form-group">
-                <label for="create_ip"><h3>サーバーIP</h3></label>
-                <input id="create_ip" class="form-control" type="text">
-            </div>
-
-            <div class="col-12 form-group">
-                <label for="create_port"><h3>サーバーアドレス(ポート)</h3></label>
-                <input id="create_port" class="form-control" type="text" value="19132">
-            </div>
-
-            <div class="col-12 form-group">
-                <input type="submit" class="btn btn-primary rounded-pill d-block" value="リンク作成！" onclick="createLink();">
-            </div>
-        </form>
-        <hr>
-        <form class="row" name="result_form" action="javascript:void(0)">
-            <div class="col-12 form-group">
-                <label for="result"><h3>以下のリンクにアクセスするとサーバーが追加されます</h3></label>
-                <textarea id="result" class="form-control" type="text" readonly="readonly"></textarea>
-            </div>
-
-            <div class="col-12 form-group">
-                <input type="submit" class="btn btn-primary rounded-pill" value="リンクをコピー" onclick="copyLink();">
-            </div>
-        </form>
     </div>
     
     <footer>
