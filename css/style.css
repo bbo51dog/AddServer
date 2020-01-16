@@ -39,3 +39,23 @@ body {
     text-align: center;
     z-index: 0;
 }
+
+#wrap {
+    min-height: 80vh;
+}
+
+footer {
+    text-align: center;
+    font-size: 15px;
+    margin-top: auto;
+    padding: 20px;
+}
+  
+footer a, footer p {
+    display: inline-block;
+    color: #464646;
+}
+
+footer a {
+    text-decoration: underline;
+}
