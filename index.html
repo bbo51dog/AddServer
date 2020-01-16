@@ -10,6 +10,13 @@
     <script type="text/javascript" src="js/AddServer.js"></script>
     <script type="text/javascript" src="js/CopyLink.js"></script>
     <script type="text/javascript" src="js/CreateLink.js"></script>
+    <script>
+        (function() {
+            window.addEventListener("load", function (){
+                $('[data-toggle="popover"]').popover();
+            });
+        })();
+    </script>
 </head>
 
 <body onload="addServer();">
@@ -49,7 +56,7 @@
             </div>
 
             <div class="col-12 form-group">
-                <input type="submit" class="btn btn-primary rounded-pill" value="リンクをコピー" onclick="copyLink();">
+                <input type="submit" class="btn btn-primary rounded-pill" value="リンクをコピー" onclick="copyLink();" data-toggle="popover" data-placement="bottom" data-content="コピーしました" tabindex="0" data-trigger="focus">
             </div>
         </form>
     </div>
