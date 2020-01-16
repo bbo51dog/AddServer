@@ -13,7 +13,7 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .over:before {
@@ -38,4 +38,25 @@ body {
     font-family: 'Lato';
     text-align: center;
     z-index: 0;
+}
+
+#wrap {
+    min-height: 85vh;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px;
+}
+  
+footer p {
+    font-size: 24px;
+    display: inline-block;
+    color: #464646;
+}
+
+footer a {
+    display: inline-block;
+    margin: 15px;
 }
