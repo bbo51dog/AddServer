@@ -51,11 +51,7 @@ footer {
     padding: 20px;
 }
   
-footer a, footer p {
+footer p {
     display: inline-block;
     color: #464646;
-}
-
-footer a {
-    text-decoration: underline;
 }
