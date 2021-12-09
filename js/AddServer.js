@@ -1,16 +1,17 @@
-function addServer(){
+function addServer() {
     var get = {};
-    if(1 < location.search.length){
+    if (1 < location.search.length) {
         var query = window.location.search.substring(1);
         var param = query.split('&');
-        for(var i = 0; i < param.length; i++ ){
+        for (var i = 0; i < param.length; i++) {
             var element = param[i].split('=');
-            var name = decodeURIComponent(element[ 0 ]);
-            var value = decodeURIComponent(element[ 1 ]);
+            var name = decodeURIComponent(element[0]);
+            var value = decodeURIComponent(element[1]);
             get[name] = value;
         }
     }
-    if(get['name'] && get['ip'] && get['port']){
+    if (get['name'] && get['ip'] && get['port']) {
+        document.getElementById("transition_wrap").innerText = "Minecraftを開いています\n画面が切り替わらない場合はMinecraftがインストールされているかご確認ください"
         location.href = 'minecraft://?addExternalServer=' + get['name'] + '|' + get['ip'] + ':' + get['port'];
     }
 }
