@@ -11,7 +11,9 @@ function addServer() {
         }
     }
     if (get['name'] && get['ip'] && get['port']) {
-        document.getElementById("transition_wrap").innerText = "Minecraftを開いています\n画面が切り替わらない場合はMinecraftがインストールされているかご確認ください"
+        document.getElementById("transition_wrap").innerHTML =
+            "<p>Minecraftを開いています<br>画面が切り替わらない場合はMinecraftがインストールされているかなどをご確認ください</p>" +
+            "<a href='/index.html'>TOPへ戻る</a>"
         location.href = 'minecraft://?addExternalServer=' + get['name'] + '|' + get['ip'] + ':' + get['port'];
     }
 }
