@@ -1,2 +1,2 @@
 # AddServer
-Add server to mcbe server list
+Generate url to add servers
