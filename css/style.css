@@ -35,7 +35,7 @@ body {
     padding: 50px;
     position: relative;
     color: white;
-    font-family: 'Lato';
+    font-family: 'Lato', sans-serif;
     text-align: center;
     z-index: 0;
 }
@@ -51,7 +51,6 @@ footer {
 }
   
 footer p {
-    font-size: 24px;
     display: inline-block;
     color: #464646;
 }
